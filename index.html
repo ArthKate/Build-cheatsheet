@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML and CSS Cheatsheet</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/b6503286ad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Web Developer <br />Cheatsheet</h1>
+    <nav>
+      <ul class="links">
+        <li><a href="#HTML">HTML</a></li>
+        <li><a href="#CSS">CSS</a></li>
+      </ul>
+      <div class="burger-menu">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+  <main class="wrapper">
+    <section class="description">
+      <p>
+        Welcome to my reference <strong>cheatsheet!</strong> capturing<br />
+        both profound HTML tags and CSS tricks. It&apos;s been<br />
+        frustrating coming up with this but am glad I have<br />
+        finally proved to myself that I can do it.
+      </p>
+      <figure>
+        <img src="me.jpg" alt="Arthur Kateeba" />
+        <figcaption>
+          by <a href="#">Arthur Kateeba</a><br />Fullstack Engineering student at Codecademy.
+        </figcaption>
+      </figure>
+    </section>
+    <table>
+      <caption>
+        <article>
+          <i class="fa-solid fa-code"></i>
+          <h3>CSS Cheatsheet</h3>
+        </article>
+      </caption>
+      <colgroup>
+        <col />
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <tr>
+        <th>Name</th>
+        <th>Attributes</th>
+        <th>Code snippet</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td data-cell="name">Picture</td>
+        <td data-cell="attributes">N/A</td>
+        <td data-cell="code snippet">
+          <code>
+              <pre>
+          &lt;picture&gt;
+            &lt;source media="(min-width:650px)" srcset="img_pink_flowers.jpg&gt;
+            &lt;source media="(min-width: 1200px)" srcset="medium.jpg&gt;
+            &lt;img src="default.jpg" alt="example image"&gt;
+          &lt/picture&gt;
+          </pre
+              >
+            </code>
+        </td>
+        <td data-cell="description">
+          This tag ensures that images render quickly and fit properly across
+          devices with different screen sizes
+        </td>
+      </tr>
+      <tr>
+        <td data-cell="name">Figure</td>
+        <td data-cell="attributes">src, figcaption</td>
+        s
+        <td data-cell="code snippet">
+          <code>
+              <pre>
+            &lt;figure&gt;
+              &lt;img src="sample.png" alt="Image within an html tag"&gt;
+              &lt;figcaption&gt;Fig.1 - The image, html figure tag and figure tag Attributes
+              &lt;/figcaption&gt;
+            &lt;/figure&gt
+          </pre
+              >
+            </code>
+        </td>
+        <td data-cell="description">
+          This tag represents self-container elements such as diagrams,
+          images, photos, infographics related to the main flow of the content
+        </td>
+      </tr>
+      <tr>
+        <td data-cell="name">iframe</td>
+        <td data-cell="attribute">src, title</td>
+        <td data-cell="code snippet">
+          <code>
+              <pre>
+              &lt;iframe src="https://www.example.com" width="600" height="400" title="Example Website"&gt;&lt;/iframe&gt;
+              </pre>
+            </code>
+        </td>
+        <td data-cell="description">
+          This tag stands for inline tag and its used to embed another html
+          document into the current one. It can be useful for display content
+          like videos, maps, forms or even webpages within a section of your
+          page.
+        </td>
+      </tr>
+      <tr>
+        <td data-cell="name">audio</td>
+        <td data-cell="attribute">src</td>
+        <td data-cell="code snippet">
+          <code>
+              <pre>
+                &lt;audio controls&gt
+                  &ltsource src="audio-file.mp3" type="audio/mpeg"&gt;
+                  &lt;source src="audio-file.ogg" type="audio/ogg"&gt;
+                  Your browser does not support the audio tag.
+                &lt;/audio&gt;
+              </pre>
+            </code>
+        </td>
+        <td data-cell="description">
+          This tag is used to embed audio files in an html document. It
+          supports multiple audio formats like mp3, ogg, wav, etc. The
+          controls attribute adds audio controls like play, pause, and volume.
+        </td>
+      </tr>
+      <tr>
+        <td data-cell="name">video</td>
+        <td data-cell="attribute">src</td>
+        <td data-cell="code snippet">
+          <code>
+              <pre>
+            &lt;video width="600px" height="400px"&gt;
+              &lt;source src="movie.mp4" type="video/mp4"&gt;
+              &lt;source src="movie.ogg" type="video/ogg"&gt;
+              Your browser does not support the video tag.
+            &lt;/video&gt;
+          </pre
+              >
+            </code>
+        </td>
+        <td data-cell="description">
+          This tag enables one to embed video files into the html document. It
+          supports multiple video formats like mp4, avi, mov, webm. The
+          control attribute adds video controls, whereas the src attribute
+          indicates the video source file location.
+        </td>
+      </tr>
+      <tr>
+        <td data-cell="name">table</td>
+        <td data-cell="attribute">N/A</td>
+        <td data-cell="code snippet">
+          <code>
+              <pre>
+                &lt;table&gt;
+                  &lt;tr&gt;
+                  &lt;th&gt;Header 1&lt;/th&gt;
+                  &lt;th&gt;Header 2&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                  &lt;td&gt;Data 1&lt;/td&gt;
+                  &lt;td&gt;Data 2&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              </pre>
+            </code>
+        </td>
+        <td data-cell="description">
+          This tag enables one to create a table in an html document. The
+          table tag is used to define the table itself, the tr tag is used to
+          define the table row, the th tag is used to define the table header,
+          and the td tag is used to define the table data.
+        </td>
+      </tr>
+    </table>
+  </main>
+</body>
+
+</html>

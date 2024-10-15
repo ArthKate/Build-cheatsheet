@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  font-size: 1.25rem;
+  background: #d8f3dc;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+h1, p {
+  font-family: "Roboto", sans-serif;
+  margin: 1rem 0;
+  font-style: normal
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.burger-menu {
+  display: none;
+}
+
+p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  color: hsla(0, 0%, 0%, 0.8);
+  padding: 1rem;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+li {
+  gap: 1;
+}
+
+li a {
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color:#2d6a4f;
+  border: 1px solid #52b788;
+
+}
+
+li a:hover {
+  background: #53b888;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+figure {
+  padding: 1rem;
+}
+
+figure img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+figcaption {
+  font-family: "Roboto", sans-serif;
+}
+
+figcaption a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+figcaption a:hover {
+  color: #2d6a4f;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  overflow-x: auto;
+  padding: 1rem;
+  border-collapse: collapse;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  background: #b7e4c7;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+caption {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+caption i {
+  margin-right: 0.5rem;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+table code {
+  text-align: left;
+}
+
+
+th, 
+td {
+  text-align: center;
+  padding: 1rem;
+}
+
+td:nth-child(4) {
+  text-align: left;
+}
+
+th {
+  color: #fff;
+  background: #52b788
+}
+
+tr:nth-child(2n) {
+  background: #cce9d9;
+}
+
+colgroup col:nth-child(1) {
+  width: 10%;
+}
+
+colgroup col:nth-child(2) {
+  width: 10%;
+}
+
+colgroup col:nth-child(3) {
+  width: 40%;
+}
+
+td:nth-child(3) {
+  padding-left: 0;
+  overflow: auto;
+  font-family: monospace;
+}
+
+colgroup col:nth-child(4) {
+  width: 40%;
+}
+
+/*Responsive table code*/
+
+@media screen and (max-width: 1024px) {
+  header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .links {
+      display: none;
+    }
+  
+    .burger-menu {
+      display: block;
+      justify-self: end;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+  table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: left;
+    padding: 0;
+  }
+  th {
+    display: none;
+    }
+
+  caption {
+    display: none;
+  }
+
+  tr {
+    display: block;
+    border-bottom: 1px solid #52b788;
+  }
+
+  td {
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #52b788;
+  }
+
+  td:nth-child(2) {
+    padding-left: 1rem;
+    overflow: auto;
+  }
+
+  td:nth-child(3) {
+    padding-left: 1rem;
+    overflow: auto;
+  }
+
+  td:nth-child(1) {
+    padding-left: 0;
+    overflow: auto;
+    background: palegoldenrod;
+    word-wrap: break-word;
+    white-space: normal;
+    padding-left: 1rem;
+    color: #fff;
+    background:#2d6a4f
+  }
+
+  td::before {
+    content: attr(data-cell) " : ";
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+
+}
