@@ -204,7 +204,7 @@ colgroup col:nth-child(4) {
 
 /*Responsive table code*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   header {
       display: grid;
       grid-template-columns: 1fr auto;
